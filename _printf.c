@@ -31,6 +31,8 @@ int _printf(const char *format, ...)
 					break;
 				case 's':
 					str = va_arg(ptr, char *);
+					if (str == NULL)
+						return (-1);
 					printed_chars += write(1, str, strlen(str));
 					break;
 			}

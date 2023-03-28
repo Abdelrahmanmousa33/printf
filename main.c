@@ -10,13 +10,13 @@
  */
 int main(void)
 {
-	char tchar = 'H';
-	char *stest = "the string test";
+	char tchar;
+	char *stest = NULL;
 	int count;
 
-	printf("%lu\n", strlen(stest));
-	count = _printf("%s\n", stest);
+	count =_printf("%s\n", stest);
 	printf("%d\n", count);
+//	printf("%d\n", count);
 	_printf("this is the char %c \n", tchar);
 	return (0);
 }
